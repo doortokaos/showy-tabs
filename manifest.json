@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Showy Tabs",
+    "version": "0.1.0",
+    "description": "Adds colors to tabs based on used domain",
+    "icons": {
+        "48": "icons/border-48.png"
+      },
+    
+      "content_scripts": [
+        {
+          "matches": ["*://*.mozilla.org/*"],
+          "js": ["showy-tabs.js"]
+        }
+      ]
+}
